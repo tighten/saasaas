@@ -27,5 +27,8 @@ Route::get('/', function () {
     $word = ucwords($result->word);
     */
 
-    return "Uber for $word";
+    return view('do-it', [
+        'startup' => 'Uber',
+        'word' => $word
+    ]);
 });
