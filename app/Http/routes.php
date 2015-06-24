@@ -25,10 +25,57 @@ Route::get('/', function () {
     dd($result);
 
     $word = ucwords($result->word);
+
+
+    Hacky crap for now....
     */
 
+    $startups = [
+        'Dwell',
+        'Uber',
+        'Bento',
+        'Astro',
+        'Crystal',
+        'Craft Coffee',
+        'Leaf.fm',
+        'Campaign',
+        'Looklist',
+        'Shyp',
+        'Sprig',
+        'Zymergen',
+        'Platejoy',
+        'Pillpack',
+        'Beepi',
+        'Ride',
+        'Life360',
+        'Thumbtack',
+        'Postmates',
+        'Duckduckgo',
+        'Leap Motion',
+        '500px',
+        'Artsy',
+        'Locu',
+        'Etsy',
+        'Facebook',
+        'Twitter',
+        'Vungle',
+        'Recurly',
+        'Vine',
+        'Instagram',
+        'Elevate',
+        'Firebase',
+        'Freshdesk',
+        'Slack',
+        'Fundly',
+        'Mint',
+        'Yelp',
+        'Spotify',
+        'Rdio',
+        'SalesForce'
+    ];
+
     return view('do-it', [
-        'startup' => 'Uber',
+        'startup' => $startups[array_rand($startups)],
         'word' => $word
     ]);
 });
