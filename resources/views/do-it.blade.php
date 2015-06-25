@@ -40,6 +40,7 @@
 
                 .title strong {
                     color: #606060;
+                    font-weight: 600;
                 }
 
             .attribution {
