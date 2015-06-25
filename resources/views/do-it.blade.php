@@ -3,7 +3,9 @@
     <head>
         <title>SaaS as a service</title>
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -14,10 +16,9 @@
                 margin: 0;
                 padding: 0;
                 width: 100%;
-                color: #B0BEC5;
+                color: #b0bec5;
                 display: table;
-                font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Roboto Condensed';
             }
 
             .container {
@@ -33,16 +34,31 @@
 
             .title {
                 color: #777;
-                font-size: 96px;
-                margin-bottom: 40px;
+                font-size: 2.25rem;
+                margin-bottom: 2.5rem;
             }
 
-            .quote {
-                font-size: 24px;
+            .attribution {
+                font-size: 1rem;
+            }
+
+            @media only screen and (min-width: 500px) {
+                .title {
+                    font-size: 6rem;
+                }
+
+                .attribution {
+                    font-size: 1.5rem;
+                }
             }
 
             a {
-                color: #B0BeE5;
+                color: #b0bee5;
+            }
+
+            .try-again {
+                display: block;
+                margin-top: 2rem;
             }
         </style>
     </head>
@@ -50,7 +66,8 @@
         <div class="container">
             <div class="content">
                 <div class="title">{{ $startup }} for {{ $word }}</div>
-                <div class="quote">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a></div>
+                <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a></div>
+                <a href="{{ url() }}" class="try-again">Try Again</a>
             </div>
         </div>
     </body>
