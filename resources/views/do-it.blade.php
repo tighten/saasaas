@@ -67,7 +67,7 @@
             <div class="content">
                 <div class="title">{{ $startup }} for {{ $word }}</div>
                 <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a></div>
-                <a href="{{ url() }}" class="try-again">Try Again</a>
+                <a href="{{ url() }}" class="try-again">Pivot</a>
             </div>
         </div>
     </body>
