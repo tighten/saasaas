@@ -1,4 +1,7 @@
 <?php
+Route::get('/pivot-announcement', function () {
+
+});
 
 Route::get('/', function () {
     $startups = [

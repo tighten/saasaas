@@ -5,7 +5,7 @@
 
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,600" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -33,10 +33,14 @@
             }
 
             .title {
-                color: #777;
+                color: #666;
                 font-size: 2.25rem;
                 margin-bottom: 2.5rem;
             }
+
+                .title strong {
+                    color: #606060;
+                }
 
             .attribution {
                 font-size: 1rem;
@@ -60,7 +64,7 @@
                 font-size: 75%;
             }
 
-            .try-again {
+            .actions {
                 color: #909ecf;
                 display: block;
                 margin-top: 2rem;
@@ -70,10 +74,10 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">{{ $startup }} for {{ $word }}</div>
+                <div class="title"><strong>{{ $startup }}</strong> for <strong>{{ $word }}</strong></div>
                 <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a><br>
                 <span class="url-for-screenshots">(http://saasaas.tighten.co)</span></div>
-                <a href="{{ url() }}" class="try-again">Pivot (try again)</a>
+                <div class="actions"><a href="{{ url() }}">Pivot (try again)</a> | <a href="http://twitter.com/home?status={{ urlencode("We're pivoting! We're now going to be $startup for $word. - Generate your own pivot at http://saasaas.tighten.co/") }}">Tweet this</a></div>
             </div>
         </div>
     </body>
