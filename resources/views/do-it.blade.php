@@ -56,7 +56,12 @@
                 color: #b0bee5;
             }
 
+            .url-for-screenshots {
+                font-size: 75%;
+            }
+
             .try-again {
+                color: #909ecf;
                 display: block;
                 margin-top: 2rem;
             }
@@ -66,8 +71,9 @@
         <div class="container">
             <div class="content">
                 <div class="title">{{ $startup }} for {{ $word }}</div>
-                <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a></div>
-                <a href="{{ url() }}" class="try-again">Pivot</a>
+                <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a><br>
+                <span class="url-for-screenshots">(http://saasaas.tighten.co)</span></div>
+                <a href="{{ url() }}" class="try-again">Pivot (try again)</a>
             </div>
         </div>
     </body>
