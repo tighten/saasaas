@@ -50,6 +50,13 @@ Route::get('/', function () {
         'Koding',
         'Boomerang',
         'YouTube',
+        'Tinder',
+        'Yo',
+        'Dropbox',
+        'Buffer',
+        'Runkeeper',
+        'Overcast',
+        'Trello',
     ];
 
     $animals = [
