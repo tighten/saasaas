@@ -78,7 +78,7 @@
                 <div class="title"><strong>{{ $startup }}</strong> for <strong>{{ $word }}</strong></div>
                 <div class="attribution">SaaSaaS from <a href="http://tighten.co/">Tighten</a> on <a href="http://github.com/tightenco/saasaas">Github</a><br>
                 <span class="url-for-screenshots">(http://saasaas.tighten.co)</span></div>
-                <div class="actions"><a href="{{ url() }}">Pivot (try again)</a> | <a href="http://twitter.com/home?status={{ urlencode("We're pivoting! We're now going to be $startup for $word. - Generate your own pivot at http://saasaas.tighten.co/") }}">Tweet this</a></div>
+                <div class="actions"><a href="{{ url('/') }}">Pivot (try again)</a> | <a href="http://twitter.com/home?status={{ urlencode("We're pivoting! We're now going to be $startup for $word. - Generate your own pivot at http://saasaas.tighten.co/") }}">Tweet this</a></div>
             </div>
         </div>
         
