@@ -8,23 +8,22 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.2.5|^8.0",
-        "laravel/framework": "^7.29",
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.55",
         "laravel/tinker": "^2.5",
-        "fideloper/proxy": "^4.4",
-        "laravel/ui": "^2.5",
+        "laravel/ui": "^3.3",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
     },
     "require-dev": {
-        "mockery/mockery": "^1.3.1",
+        "mockery/mockery": "^1.4.2",
         "phpunit/phpunit": "^8.5.8|^9.3.3",
         "phpspec/phpspec": "~7.1",
         "symfony/dom-crawler": "^5.3",
         "symfony/css-selector": "^5.3",
-        "nunomaduro/collision": "^4.3",
+        "nunomaduro/collision": "^5.0",
         "fakerphp/faker": "^1.9.1",
-        "facade/ignition": "^2.0"
+        "facade/ignition": "^2.5"
     },
     "autoload": {
         "classmap": [
@@ -51,7 +50,8 @@
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
-            "php artisan optimize"
+            "php artisan optimize",
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
         ],
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
