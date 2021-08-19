@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
-
     public function index()
     {
         $startups = [
@@ -1494,7 +1493,7 @@ class HomeController extends Controller
 
         return view('do-it', [
             'startup' => $startups[array_rand($startups)],
-            'word' => ucwords(str_plural($word))
+            'word' => ucwords(str_plural($word)),
         ]);
     }
 }
