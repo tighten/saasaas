@@ -183,6 +183,8 @@ return [
     */
 
     'aliases' => [
+        'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
+        'Date' => Illuminate\Support\Facades\Date::class,
         'Str' => Illuminate\Support\Str::class,
         'Arr' => Illuminate\Support\Arr::class,
 
