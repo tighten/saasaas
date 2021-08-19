@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
