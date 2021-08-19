@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
@@ -1493,7 +1494,7 @@ class HomeController extends Controller
 
         return view('do-it', [
             'startup' => $startups[array_rand($startups)],
-            'word' => ucwords(str_plural($word)),
+            'word' => ucwords(Str::plural($word)),
         ]);
     }
 }
