@@ -183,6 +183,8 @@ return [
     */
 
     'aliases' => [
+        'Str' => Illuminate\Support\Str::class,
+        'Arr' => Illuminate\Support\Arr::class,
 
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,

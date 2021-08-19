@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
-
     public function index()
     {
         $startups = [
@@ -1494,7 +1494,7 @@ class HomeController extends Controller
 
         return view('do-it', [
             'startup' => $startups[array_rand($startups)],
-            'word' => ucwords(str_plural($word))
+            'word' => ucwords(Str::plural($word)),
         ]);
     }
 }
