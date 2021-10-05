@@ -9,7 +9,7 @@
     "type": "project",
     "require": {
         "php": "^7.3|^8.0",
-        "laravel/framework": "^8.62",
+        "laravel/framework": "^8.63",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
         "fruitcake/laravel-cors": "^2.0",
