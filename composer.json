@@ -16,12 +16,12 @@
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
     },
     "require-dev": {
-        "mockery/mockery": "^1.4.2",
-        "phpunit/phpunit": "^8.5.8|^9.3.3",
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.10",
         "phpspec/phpspec": "~7.1",
         "symfony/dom-crawler": "^5.3",
         "symfony/css-selector": "^5.3",
-        "nunomaduro/collision": "^5.0",
+        "nunomaduro/collision": "^5.10",
         "fakerphp/faker": "^1.9.1",
         "facade/ignition": "^2.5"
     },
